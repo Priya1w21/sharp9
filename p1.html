@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Project1</title>
+    </head>
+    <body style="margin:0">
+        <form onsubmit="handleFormSubmit(event)">
+            <label for="expense">Choose Expense<input type="number" name="expense" id="expense"/></label>
+            <label for="description">Choose Description<input type="text" name="description" id="description"/></label>
+            <label for="category">Choose a Category<select name="category" id="category">
+                <option>Fuel</option>
+                <option>Food</option>
+                <option>Electricity</option>
+                <option>Movies</option>
+            </select>
+            </label>
+            <button type="submit">Add Expense</button>
+        </form>
+        <ul id="userlist" class="items">
+
+        </ul>
+    </body>
+    <script src="pr.js"></script>
+</html>
